@@ -5,5 +5,5 @@ var port = process.env.PORT || process.env.OPENSHIFT_NODEJS_PORT || 8080,
 // serves files from the root directory
 app.use(express.static('./'));
 app.listen(port, ip, function () {    
-  console.log('Listening at http://localhost:8080');  
+  console.log('Listening at http://' + ip + ':' + port);  
 });
